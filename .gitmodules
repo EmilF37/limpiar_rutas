@@ -1,6 +1,6 @@
 [submodule "data/xalapa_bus_data"]
 	path = data/xalapa_bus_data
-	url = git@github.com:XalapaCode/xalapa_bus_data.git
+	url = https://github.com/XalapaCode/xalapa_bus_data.git
 [submodule "data/onta-mining"]
 	path = data/onta-mining
-	url = git@gitlab.com:onta/onta-mining.git
+	url = https://gitlab.com/onta/onta-mining.git
