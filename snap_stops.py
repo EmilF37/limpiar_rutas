@@ -1,5 +1,10 @@
 import json
+import os
 
-data = json.load(open('data/xalapa_bus_data/data/001/route/route.geojson'))
+for root, dirs, files in os.walk('data/xalapa_bus_data/data'):
+    if not root.endswith('/route'):
+        continue
 
-print(data)
+    file_path = os.path.join(root, 'route.geojson')
+
+    print(file_path)
