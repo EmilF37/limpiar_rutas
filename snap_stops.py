@@ -1,10 +1,13 @@
-import json, os
+import json
+import os
+#Id=data["features"][0]["properties"]["id"]
 
-os.walk('data/xalapa_bus_data/data')
+for root, dirs, files in os.walk('data/xalapa_bus_data/data'):
+    print(root)
+    if not root.endswith('route'):
+        continue
+
+    file_path = os.path.join(root, 'route.geojson')
+    print(file_path)
 
 
-data = json.load(open('data/xalapa_bus_data/data/001/route/route.geojson'))
-
-Id=data["features"][0]["properties"]["id"]
-
-#print(data)
