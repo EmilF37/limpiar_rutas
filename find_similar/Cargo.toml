@@ -1,0 +1,10 @@
+[package]
+name = "find_similar"
+version = "0.1.0"
+authors = ["Abraham Toriz <awonderfulcode@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+geohash = "0.8.0"
+clap = "2.32.0"
+json = "0.11.13"
